@@ -1,0 +1,31 @@
+Rule Project MVC
+
+- Controller:
+    + Tên class & tên file luôn phải giống nhau
+    + Tên class luôn có "Controller" ở cuối cùng
+    + Chữ cái đầu luôn viết hoa
+    Ex: ProductController (Class name) -> ProductController.php (File name)
+        UserController (Class name) -> UserController.php (File name)
+
+- Model:
+    + Giống Controller nhưng khác ở tên cố định là "Model"
+    Ex: ProductModel (Class name) -> ProductModel.php (File name)
+        UserModel (Class name) -> UserModel.php (File name)
+
+- View:
+    + Tên của File View nên giống với tên method trong File View đó
+    Ex: Method trong controller là index -> tên file view sẽ là index.php
+
+    +Tên thư mục View nên giống với controller nhưng ở dạng số nhiều
+    Ex: UserController -> Folder view là users
+
+- Param Name: 
+    + controller: Qui định gọi vào controller nào. Name phải trùng tên với Controller Name
+    Ex: UserController -> Param controller: user
+        ProductController -> Param controller: product
+
+    + action: Qui định gọi vào method nào. Trùng hợp không có -> mặc định là action là index
+
+Route: Từ sau dấu ? sẽ có tên là route
+
+cart, cart.js, controll,model cart

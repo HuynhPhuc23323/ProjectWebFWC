@@ -1,0 +1,17 @@
+.bshadow {
+    box-shadow: rgb(0 0 0 / 40%) 0px 0px 10px;
+}
+
+.hder>h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #efcac2;
+}
+
+.spa-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.row>.spa-btn>.btn:hover {
+    background-color: #994c4b;
+}

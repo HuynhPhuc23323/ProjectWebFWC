@@ -1,0 +1,359 @@
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+:root {
+    --mainColor: #cda45e;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    transition: all 0.4s;
+    background: #fff;
+}
+
+.navbar .nav-link {
+    color: #000;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: var(--mainColor);
+}
+
+.navbar-brand {
+    color: var(--mainColor);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.navbar-brand span {
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.2em;
+}
+
+.navbar-brand small {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+}
+
+.nav-item {
+    letter-spacing: 4px;
+}
+
+
+/* Change navbar styling on scroll */
+
+.navbar.s-active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.s-active .nav-link {
+    color: var(--mainColor);
+}
+
+.navbar.s-active .nav-link:hover,
+.navbar.s-active .nav-link:focus {
+    color: var(--mainColor);
+    text-decoration: none;
+}
+
+.navbar.s-active .navbar-brand {
+    color: var(--mainColor);
+}
+
+.nav-item:hover .nav-link {
+    color: var(--mainColor);
+}
+
+.s-active>.nav-link {
+    color: var(--mainColor);
+}
+
+
+/* Change navbar styling on small viewports */
+
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+    .navbar .nav-link {
+        color: #000;
+    }
+    .s-active>.nav-link {
+        color: var(--mainColor);
+    }
+}
+
+
+/* Search */
+
+
+/* Search bar begin */
+
+.container-search {
+    width: 100%;
+    margin-top: 160px;
+}
+
+.container-seabar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    height: 80px;
+    width: 90%;
+    background-color: #ffeae5;
+    display: flex;
+    align-items: center;
+    border: 1px;
+    border-radius: 0.5rem;
+    box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+}
+
+.form-searchbar {
+    height: 60px;
+    background-color: transparent;
+    border-radius: .5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(204, 204, 204, 0.3);
+    padding: 5px;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-input .text-search {
+    border: none;
+    width: 100%;
+    margin-right: 20px;
+    font-size: 20px;
+    height: 40px;
+    color: #cda45e;
+    font-weight: 300;
+    background-color: transparent;
+    outline: none;
+}
+
+.text-search::placeholder {
+    color: #cda45e;
+    opacity: 0.6;
+    font-style: italic;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.icon-search {
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.icon-search:hover {
+    opacity: 0.8;
+}
+
+.category {
+    margin-top: 48px;
+}
+
+.selectCategory {
+    font-size: 20px;
+    height: 40px;
+    background-color: rgba(204, 204, 204, 0.3);
+    width: 20%;
+    border-radius: .5rem;
+    outline: none;
+    color: #cda45e;
+    cursor: pointer;
+}
+
+.btn-search {
+    font-size: 20px;
+    height: 40px;
+    margin-left: 4rem;
+    color: #000;
+    background-color: #cda45e;
+    border-radius: 1rem;
+}
+
+.btn-search:hover {
+    background-color: #994c4b;
+}
+
+
+/* Search bar end */
+
+
+/* Search result begin */
+
+.container-searesult {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.search-result {
+    width: 90%;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+    background-color: #ffeae5;
+}
+
+.search-result>h1 {
+    margin: 10px 0;
+    color: #cda45e;
+    font: 40px Montserrat;
+}
+
+
+/* Search result end */
+
+
+/*Search popularproducts begin */
+
+.container-popularproducts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.search-content {
+    width: 90%;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+    background-color: #ffeae5;
+}
+
+.search-content>h1 {
+    color: #cda45e;
+    font: 40px Montserrat;
+    margin-top: 10px;
+    margin-bottom: 32px;
+}
+
+
+/* product */
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #cda45e;
+    border-radius: .25rem;
+    height: 95%;
+    margin: 10px;
+}
+
+.mb-2>span {
+    font: 16px Montserrat, sans-serif;
+    color: #cda45e;
+    display: block;
+    margin: 4px;
+}
+
+.card-body>.mb-0 {
+    font: 14px Montserrat, sans-serif;
+    font-size: .9rem;
+    line-height: 2rem;
+    font-weight: 800;
+}
+
+.card-body>.btn {
+    transition: 1s;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #994c4b;
+    color: #994c4b;
+    font-size: 1rem;
+    margin: 4px;
+}
+
+.card-body>.btn:hover {
+    background-color: #994c4b;
+    color: white;
+}
+
+
+/*Search popularproducts end */
+
+
+/*==========End of New Released Section======*/
+
+footer {
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5vh;
+}
+
+.footer-logo {
+    width: 25%;
+    margin-top: 5vh;
+}
+
+footer h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+footer p {
+    font-size: .9rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+footer .media-icons img {
+    width: 40px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 15px;
+}
